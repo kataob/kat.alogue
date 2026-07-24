@@ -1,40 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kat.alogue</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>kat.alogue</h1>
-      <p>CV, thoughts, discussions, and activities.</p>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katarina Obradović — Power Systems Engineer &amp; PhD Researcher</title>
+<meta name="description" content="Katarina Obradović — renewable energy engineer and PhD researcher specializing in hybrid wind-solar-battery power plant design and optimization.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <main>
-      <section id="cv">
-        <h2>CV</h2>
-        <p>
-          Share your background, experience, and skills here. Replace this text
-          with your full CV details.
-        </p>
-      </section>
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="site-name">Katarina Obradović</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="thoughts.html">Thoughts</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      <section id="thoughts-discussions">
-        <h2>Thoughts &amp; Discussions</h2>
-        <p>
-          Publish your ideas, reflections, and ongoing conversations in this
-          section.
-        </p>
-      </section>
+<main class="container">
 
-      <section id="activities">
-        <h2>Activities</h2>
-        <p>
-          List recent work, events, projects, and community activities here.
-        </p>
-      </section>
-    </main>
-  </body>
+  <section class="hero">
+    <div class="eyebrow">Power Systems Engineer · PhD Researcher</div>
+    <h1>Katarina Obradović</h1>
+    <p class="tagline">
+      I design and optimize hybrid wind-solar-battery power plants — bridging
+      technical modeling with real-world project development for renewable
+      energy and storage assets.
+    </p>
+    <p class="meta">Copenhagen, Denmark &nbsp;·&nbsp; obradovick15@gmail.com</p>
+    <div class="cta-row">
+      <a href="experience.html" class="btn btn-primary">View Experience</a>
+      <a href="Katarina_Obradovic_CV.pdf" class="btn btn-secondary">Download CV</a>
+      <a href="mailto:obradovick15@gmail.com" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-label">Profile</div>
+    <p class="profile-text">
+      Power systems engineer with five years of experience across renewable
+      energy project development, grid integration, and optimization-based
+      design of hybrid wind-solar-battery power plants. Through a PhD at
+      the Technical University of Denmark, an applied research stay at
+      TotalEnergies, and prior project development work at RP Global, I
+      combine feasibility studies, techno-economic modeling, and owner-side
+      technical support to bridge system design with real-world project
+      delivery — with a particular commitment to supporting renewable
+      energy scale-up in emerging markets.
+    </p>
+  </section>
+
+  <section id="impact">
+    <div class="section-label">Impact Highlights</div>
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="stat-number">~1 GW</div>
+        <div class="stat-desc">Wind and solar PV project portfolio originated, developed, and managed, including assessment of BESS integration.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">750 MW</div>
+        <div class="stat-desc">Reference wind-solar-battery system co-defined as a contributing researcher for IEA TCP Wind Task 50, used to standardize hybrid/BESS design methodology.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">30–70%</div>
+        <div class="stat-desc">Improved utilization of existing electrical infrastructure when a power plant is hybridized with a complementary technology.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">15%</div>
+        <div class="stat-desc">Lower cable costs when the electrical network is co-optimized for two complementary technologies via MILP modeling.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-label">Skills &amp; Tools</div>
+
+    <div class="skill-group">
+      <h4>Renewable Energy</h4>
+      <div class="tag-row">
+        <span class="tag">Wind farm layout optimization</span>
+        <span class="tag">Hybrid wind-solar-battery plants</span>
+        <span class="tag">BESS sizing &amp; integration</span>
+        <span class="tag">Wake &amp; shadow modeling</span>
+        <span class="tag">Solar PV design</span>
+        <span class="tag">Cable network design</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Power Systems</h4>
+      <div class="tag-row">
+        <span class="tag">Grid integration</span>
+        <span class="tag">Transmission &amp; distribution</span>
+        <span class="tag">Electrical infrastructure design</span>
+        <span class="tag">Feasibility &amp; technical due diligence</span>
+        <span class="tag">Electricity markets</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Optimization &amp; Programming</h4>
+      <div class="tag-row">
+        <span class="tag">Python</span>
+        <span class="tag">MATLAB / Simulink</span>
+        <span class="tag">Julia</span>
+        <span class="tag">MILP / MIQP</span>
+        <span class="tag">Gradient-based optimization</span>
+        <span class="tag">Gurobi</span>
+        <span class="tag">CPLEX</span>
+        <span class="tag">Pyomo / JuMP / IPOPT</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Techno-Economic Analysis</h4>
+      <div class="tag-row">
+        <span class="tag">CAPEX / OPEX / LCOE / IRR</span>
+        <span class="tag">Sensitivity analysis</span>
+        <span class="tag">Green-finance due diligence</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Software</h4>
+      <div class="tag-row">
+        <span class="tag">windPRO</span>
+        <span class="tag">WAsP</span>
+        <span class="tag">PVSyst</span>
+        <span class="tag">SAM</span>
+        <span class="tag">PyWake</span>
+        <span class="tag">HyDesign</span>
+        <span class="tag">DigSILENT PowerFactory</span>
+        <span class="tag">EMTP</span>
+        <span class="tag">COMSOL</span>
+        <span class="tag">Git / GitHub</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <div class="tag-row">
+        <span class="tag">Serbian/Croatian — native</span>
+        <span class="tag">English — C2</span>
+        <span class="tag">French — A1</span>
+        <span class="tag">Danish — A1</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-copy">© 2026 Katarina Obradović</div>
+    <div class="footer-links">
+      <a href="mailto:obradovick15@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
