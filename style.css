@@ -190,15 +190,15 @@ nav.site-nav a.active {
   height: 100%;
   object-fit: cover;
   object-position: center 40%;
-  filter: grayscale(25%) saturate(0.85) brightness(0.85) contrast(1.05);
-  opacity: 0.45;
+  filter: grayscale(45%) saturate(0.7) brightness(1.1) blur(1px);
+  opacity: 0.18;
 }
 .hero-bg::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(150deg, var(--accent-soft) 0%, var(--bg) 65%);
-  opacity: 0.55;
+  opacity: 0.75;
 }
 
 .hero {
