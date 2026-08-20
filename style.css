@@ -130,6 +130,22 @@ nav.site-nav a.active {
   border-bottom-color: var(--accent);
 }
 
+nav.site-nav a.nav-connect-btn {
+  color: #fff;
+  background: var(--accent);
+  padding: 8px 18px;
+  border-radius: 999px;
+  border-bottom: none;
+  font-weight: 600;
+  transition: background var(--transition), transform var(--transition);
+}
+nav.site-nav a.nav-connect-btn:hover {
+  color: #fff;
+  background: var(--accent-dark);
+  border-bottom: none;
+  transform: translateY(-1px);
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -150,7 +166,11 @@ nav.site-nav a.active {
 .hero-band {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(150deg, var(--accent-soft) 0%, var(--bg) 55%);
+  background:
+    linear-gradient(150deg, rgba(220, 241, 236, 0.91) 0%, rgba(244, 250, 249, 0.94) 55%),
+    url('hero-banner.jpg');
+  background-size: cover;
+  background-position: center 30%;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -185,31 +205,7 @@ nav.site-nav a.active {
   padding: 72px 0 56px;
 }
 
-.hero-inner {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-}
-
-.hero-text { flex: 1; min-width: 0; }
-
-.hero-avatar {
-  flex-shrink: 0;
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Fraunces', serif;
-  font-size: 2.3rem;
-  font-weight: 600;
-  color: #fff;
-  background: linear-gradient(135deg, var(--accent), var(--ocean));
-  box-shadow: var(--shadow-hover);
-  transition: transform var(--transition);
-}
-.hero-avatar:hover { transform: translateY(-4px) rotate(-3deg); }
+.hero-text { max-width: 720px; }
 
 .eyebrow {
   text-transform: uppercase;
@@ -249,7 +245,6 @@ nav.site-nav a.active {
 .hero-text > .tagline { animation-delay: 0.14s; }
 .hero-text > .meta { animation-delay: 0.2s; }
 .hero-text > .cta-row { animation-delay: 0.26s; }
-.hero-avatar { animation: fadeUp 0.8s var(--ease) 0.1s both; }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(14px); }
@@ -583,14 +578,16 @@ footer.site-footer {
   nav.site-nav.open { display: block; }
   nav.site-nav ul {
     flex-direction: column;
+    align-items: flex-start;
     gap: 4px;
     padding: 12px 0 0;
+  }
+  nav.site-nav a.nav-connect-btn {
+    margin-top: 10px;
   }
   .nav-inner { flex-wrap: wrap; }
   .timeline-head { flex-direction: column; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
-  .hero-inner { flex-direction: column-reverse; }
-  .hero-avatar { width: 88px; height: 88px; font-size: 1.6rem; }
   .connect-band { padding: 36px 24px; }
 }
 
