@@ -167,7 +167,7 @@ nav.site-nav a.nav-connect-btn:hover {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(150deg, rgba(220, 241, 236, 0.91) 0%, rgba(244, 250, 249, 0.94) 55%),
+    linear-gradient(150deg, rgba(220, 241, 236, 0.91) 30%, rgba(244, 250, 249, 0.94) 55%),
     url('hero-banner.jpg');
   background-size: cover;
   background-position: center 30%;
