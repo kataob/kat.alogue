@@ -166,12 +166,33 @@ nav.site-nav a.nav-connect-btn:hover {
 .hero-band {
   position: relative;
   overflow: hidden;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+}
+
+.hero-photo {
+  position: absolute;
+  inset: -30px;
   background:
-    linear-gradient(150deg, rgba(220, 241, 236, 0.25) 0%, rgba(244, 250, 249, 0.15) 55%),
+    linear-gradient(150deg, rgba(220, 241, 236, 0.3) 0%, rgba(244, 250, 249, 0.22) 55%),
     url('hero-banner.jpg');
   background-size: cover;
-  background-position: center 30%;
-  border-bottom: 1px solid var(--rule);
+  background-position: 75% 25%;
+  filter: blur(8px);
+  transform: scale(1.15);
+  z-index: 0;
+}
+
+.photo-credit {
+  position: absolute;
+  right: 14px;
+  bottom: 10px;
+  z-index: 2;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  background: rgba(244, 250, 249, 0.65);
+  padding: 3px 9px;
+  border-radius: 999px;
 }
 
 .hero-band::before,
@@ -207,9 +228,9 @@ nav.site-nav a.nav-connect-btn:hover {
 
 .hero-text {
   max-width: 640px;
-  background: rgba(244, 250, 249, 0.86);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(244, 250, 249, 0.68);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: var(--radius);
   padding: 32px 36px;
