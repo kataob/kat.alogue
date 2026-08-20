@@ -177,8 +177,8 @@ nav.site-nav a.nav-connect-btn:hover {
     linear-gradient(150deg, rgba(220, 241, 236, 0.3) 0%, rgba(244, 250, 249, 0.22) 55%),
     url('hero-banner.jpg');
   background-size: cover;
-  background-position: 75% 25%;
-  filter: blur(6px);
+  background-position: 90% 25%;
+  filter: blur(4px);
   transform: scale(1.15);
   z-index: 0;
 }
