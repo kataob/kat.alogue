@@ -167,7 +167,7 @@ nav.site-nav a.nav-connect-btn:hover {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(150deg, rgba(220, 241, 236, 0.91) 30%, rgba(244, 250, 249, 0.94) 55%),
+    linear-gradient(150deg, rgba(220, 241, 236, 0.25) 0%, rgba(244, 250, 249, 0.15) 55%),
     url('hero-banner.jpg');
   background-size: cover;
   background-position: center 30%;
@@ -205,7 +205,16 @@ nav.site-nav a.nav-connect-btn:hover {
   padding: 72px 0 56px;
 }
 
-.hero-text { max-width: 720px; }
+.hero-text {
+  max-width: 640px;
+  background: rgba(244, 250, 249, 0.86);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius);
+  padding: 32px 36px;
+  box-shadow: var(--shadow);
+}
 
 .eyebrow {
   text-transform: uppercase;
