@@ -334,6 +334,40 @@ section + section { border-top: 1px solid var(--rule); }
   max-width: 700px;
 }
 
+/* ---------- Page quote ---------- */
+.page-quote {
+  margin: 6px 0 0;
+  max-width: 620px;
+}
+
+.page-quote-text {
+  font-family: 'General Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  position: relative;
+}
+
+.page-quote-text::before,
+.page-quote-text::after {
+  font-style: normal;
+  font-size: 1.6em;
+  vertical-align: -0.28em;
+  color: var(--accent-light);
+}
+
+.page-quote-text::before { content: '\201C'; margin-right: 1px; }
+.page-quote-text::after { content: '\201D'; margin-left: 1px; }
+
+.page-quote-author {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
 /* ---------- Stat / impact cards ---------- */
 .stat-grid {
   display: grid;
