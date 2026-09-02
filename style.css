@@ -462,6 +462,60 @@ section + section { border-top: 1px solid var(--rule); }
   transform: translateY(-1px);
 }
 
+/* ---------- Mini Projects ---------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.project-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 22px 22px 20px;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.project-title {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+.project-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.project-title a:hover { color: var(--accent-dark); }
+
+.project-desc {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+.project-link svg { width: 16px; height: 16px; }
+.project-link:hover { color: var(--accent); }
+
 /* ---------- Style note (Experience) ---------- */
 .style-note {
   display: flex;
