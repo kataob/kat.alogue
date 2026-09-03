@@ -336,8 +336,8 @@ section + section { border-top: 1px solid var(--rule); }
 
 /* ---------- Page quote ---------- */
 .page-quote {
-  margin: 6px 0 0;
-  max-width: 1000px;
+  margin: 2px 0 0;
+  max-width: 1500px;
 }
 
 .page-quote-text {
